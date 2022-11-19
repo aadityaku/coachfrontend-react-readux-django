@@ -46,9 +46,21 @@ export const indexApi = createApi({
                 
                 }
             }
+        }),
+        addCourse:builder.mutation({
+            query: ({slug,access_token}) => {
+                return {
+                    url:`add-course/${slug}/`,
+                    method:"POST",
+                    headers: {
+                        'authorization':`Bearer ${access_token}`,
+                    }
+
+                }
+            }
         })
     })
 
 
 })
-export const { useGetAllCourseQuery,useRegisterStudentMutation,useLoginStudentMutation,useLoginRefreshStudentMutation} = indexApi
+export const { useGetAllCourseQuery,useRegisterStudentMutation,useLoginStudentMutation,useLoginRefreshStudentMutation,useAddCourseMutation} = indexApi

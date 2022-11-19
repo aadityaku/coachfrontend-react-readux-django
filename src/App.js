@@ -52,7 +52,7 @@ function App() {
     }, [])
   let {access_token,user} = getToken()
   useEffect(() => {
-      
+      handleRefresh()
       dispatch(setUserToken({access_token:access_token}))
       dispatch(setUserSession({user:user}))
       

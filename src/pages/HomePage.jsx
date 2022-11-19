@@ -1,16 +1,20 @@
 import React from 'react'
 import Banner from '../components/Home/Banner'
+import CardCourse from '../components/Home/CardCourse'
+
+import Company from '../components/Home/Company'
+import Fotter from '../components/Home/Fotter'
 import { getToken } from '../services/LocalStorageService'
 import { getSession } from '../services/SessionStorageservice'
 
 const HomePage = () => {
-  // const {user} = getToken();
-  // console.log(user);
-  // const {user} = getSession()
-  // console.log(user);
+  
   return (
     <>
     <Banner/>
+    <CardCourse/>
+     <Company />
+    <Fotter/>
     </>
     
   )

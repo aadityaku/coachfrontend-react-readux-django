@@ -4,8 +4,8 @@ import CardCover from '@mui/joy/CardCover';
 import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/joy/Typography';
 import React from 'react'
-import { useGetAllCourseQuery } from '../features/coach/Index'
-const OurCourse = () => {
+import { useGetAllCourseQuery } from '../../features/coach/Index'
+const Fotter2 = () => {
   const {data,error,isLoading} = useGetAllCourseQuery()
   if(isLoading){
     return (
@@ -45,4 +45,4 @@ const OurCourse = () => {
   )
 }
 
-export default OurCourse
+export default Fotter2
